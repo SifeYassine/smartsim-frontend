@@ -59,8 +59,8 @@
               <h2 class="flex items-center gap-2 text-card-foreground font-semibold text-lg">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
-                  <path d="M2 11v8a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-8M2 7v4m20-4v4" />
-                  <path d="M4.93 2.93a2 2 0 0 1 2.83 0l1.41 1.41A2 2 0 0 1 10 5.83V7a1 1 0 0 0 1 1h8a2 2 0 0 1 2 2" />
+                  <path
+                    d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" />
                 </svg>
                 Upload Image Folder
               </h2>
@@ -74,8 +74,8 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="h-4 w-4">
-                    <path d="M2 11v8a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-8M2 7v4m20-4v4" />
-                    <path d="M4.93 2.93a2 2 0 0 1 2.83 0l1.41 1.41A2 2 0 0 1 10 5.83V7a1 1 0 0 0 1 1h8a2 2 0 0 1 2 2" />
+                    <path
+                      d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" />
                   </svg>
                   Select Image Folder
                 </button>
@@ -260,7 +260,7 @@
               </div>
 
               <button id="cluster-btn"
-                class="w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition-colors">
+                class="w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
                   <path
@@ -278,6 +278,7 @@
         <div id="results-container" class="hidden border-t border-border pt-8">
         </div>
 
+        <script type="module" src="./src/script.js"></script>
       </div>
     </main>
   </div>
