@@ -11,10 +11,16 @@ The **React** web interface for SmartSim: upload an image collection, search it 
 - Adjustable **number of results** and **similarity threshold**
 - Result grid with similarity scores
 
+![Text search](screenshots/text-search.jpg)
+
+![Image search](screenshots/image-search.jpg)
+
 ### 🧩 Cluster tab
 - Group the indexed images by **max number of clusters** or by **similarity threshold**
 - Optional **min / max images per cluster** filters
 - Browse clusters one at a time with **previous / next** navigation
+
+![Clustering](screenshots/clustering.jpg)
 
 ### General
 - **Light / dark theme** toggle (remembered in `localStorage`)
