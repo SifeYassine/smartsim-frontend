@@ -20,10 +20,10 @@ export default function ClusterTab() {
     try {
       const params = {};
 
-      if (maxClusters) params.maxNumClusters = Number(maxClusters);
-      if (threshold) params.similarityThreshold = Number(threshold);
-      if (minImages) params.minImagesPerCluster = Number(minImages);
-      if (maxImages) params.maxImagesPerCluster = Number(maxImages);
+      if (maxClusters) params.max_num_clusters = Number(maxClusters);
+      if (threshold) params.similarity_threshold = Number(threshold);
+      if (minImages) params.min_images_per_cluster = Number(minImages);
+      if (maxImages) params.max_images_per_cluster = Number(maxImages);
 
       const response = await api.post("search/cluster", params);
       setClusterData(response.data);
